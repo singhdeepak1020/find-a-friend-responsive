@@ -514,7 +514,7 @@ body {
 
   body {
     overflow-x: hidden;
-    min-height: 300%;
+    height: 400%;
     width: 99%;
     margin: 0;
     padding: 0;
