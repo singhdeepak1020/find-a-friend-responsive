@@ -534,11 +534,11 @@ body {
     margin: 0 auto;
   }
   .description_container {
+    text-align: center;
     margin: 0 100px;
   }
   .description_container_paragraph {
     font-size: 32px;
-    text-align: center;
     text-align: justify;
   }
 
@@ -589,14 +589,16 @@ body {
   }
 
   .messages_container {
-    font-size: 50px;
+    font-size: 40px;
   }
   .message_left_paragraph,
   .message_right_paragraph {
-    border-radius: 20px;
+    border-radius: 15px;
+    padding: 20px 30px;
+    margin: 5px;
   }
   .new_message_container {
-    margin: 40px;
+    margin: 10px;
   }
   .new_message_input {
     min-height: 120px;
