@@ -525,6 +525,10 @@ body {
   .messenger_container {
     width: 100%;
   }
+  .dashboard_container,
+  .messenger_container {
+    height: 140%;
+  }
 
   .logo_container {
     margin: 0 auto;
@@ -533,7 +537,9 @@ body {
     margin: 0 100px;
   }
   .description_container_paragraph {
-    font-size: 35px;
+    font-size: 32px;
+    text-align: center;
+    text-align: justify;
   }
 
   .personal_code_title_paragraph,
@@ -550,6 +556,7 @@ body {
   .personal_code_copy_button {
     width: 75px;
     height: 70px;
+    border-radius: 15px;
   }
   .personal_code_copy_button img {
     width: 70%;
