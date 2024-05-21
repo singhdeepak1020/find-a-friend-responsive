@@ -514,6 +514,9 @@ body {
 
   body {
     min-height: 300%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
 
   .dashboard_container,
