@@ -70,8 +70,8 @@ body {
   margin: 0 auto;
 }
 .logo_container img {
-  height: 120%;
-  margin-top: 40px;
+  height: 120px;
+  margin-top: 60px;
 }
 
 .description_container {
@@ -315,8 +315,8 @@ body {
   height: 100%;
 }
 .videos_placeholder img {
-  height: 30%;
-  width: 30%;
+  height: 250px;
+  width: 250px;
 }
 
 .local_video_container {
@@ -535,12 +535,12 @@ body {
   }
   .dashboard_container,
   .messenger_container {
-    height: 140%;
+    height: 150%;
   }
 
-  .logo_container {
-    margin-top: 70px;
-    /* margin-bottom: -50px; */
+  .logo_container img {
+    margin-top: 80px;
+    height: 200px;
   }
   .description_container {
     text-align: center;
