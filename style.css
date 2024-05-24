@@ -76,7 +76,7 @@ body {
 }
 
 .description_container {
-  margin: 0 50px;
+  margin: 0 80px;
 }
 
 .description_container_paragraph {
@@ -369,7 +369,6 @@ body {
   border-radius: 50px;
   transition: 0.3s;
 }
-
 .call_button_large {
   width: 75px;
   height: 75px;
@@ -393,8 +392,9 @@ body {
 }
 
 .dialog_content {
-  width: 520px;
-  height: 530px;
+  width: 25%;
+  height: 50%;
+  padding: 15px;
   background: white;
   border: 1px solid #d5deeb;
   box-shadow: 0px 2px 20px 5px rgba(10, 145, 219, 0.05);
@@ -412,32 +412,36 @@ body {
 }
 
 .dialog_image_container {
-  width: 275px;
-  height: 275px;
-  border-radius: 275px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
   background: linear-gradient(168.68deg, #0052c9 1.12%, #0a91db 100%);
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.dialog_image_container img {
+  width: 60%;
+  height: 60%;
+}
 
 .dialog_description {
-  font-size: 20px;
+  font-size: 18px;
   color: black;
   font-weight: 500;
   padding: 0 40px;
 }
 
 .dialog_button_container {
-  height: 55px;
-  width: 100%;
+  height: 50px;
+  width: 90%;
   display: flex;
   justify-content: space-evenly;
 }
 
 .dialog_accept_call_button {
-  width: 180px;
-  height: 55px;
+  width: 40%;
+  height: 100%;
   background: linear-gradient(180deg, #00c920 0%, #2fe24b 100%);
   box-shadow: 0px 2px 42px 10px rgba(47, 226, 75, 0.15);
   border-radius: 15px;
@@ -445,8 +449,8 @@ body {
 }
 
 .dialog_reject_call_button {
-  width: 180px;
-  height: 55px;
+  width: 40%;
+  height: 100%;
   background: linear-gradient(180deg, #ff3b3b 0%, #ff6262 100%);
   box-shadow: 0px 2px 42px 10px rgba(255, 59, 59, 0.15);
   border-radius: 15px;
@@ -454,8 +458,8 @@ body {
 }
 
 .dialog_button_image {
-  max-width: 100%;
-  max-height: 100%;
+  width: 60%;
+  height: 60%;
 }
 
 .dashboard_blur {
@@ -492,12 +496,12 @@ body {
 }
 
 @media (max-width: 1600px) {
-  .description_container_paragraph {
+  .description_container_paragraph,
+  .personal_code_value_paragraph {
     font-size: 13px;
   }
 
   .personal_code_title_paragraph,
-  .personal_code_value_paragraph,
   .checkbox_container_paragraph {
     font-size: 15px;
   }
@@ -523,6 +527,10 @@ body {
     margin: 20px auto;
   }
 
+  .personal_code_value_paragraph,
+  .description_container_paragraph {
+    font-size: 10px;
+  }
   .personal_code_container {
     height: 100px;
   }
@@ -530,6 +538,12 @@ body {
     width: 35px;
     height: 32px;
     border-radius: 9px;
+  }
+
+  .personal_code_connecting_paragraph,
+  .stranger_title_container,
+  .checkbox_container_paragraph {
+    font-size: 12px;
   }
 
   .personal_code_input {
@@ -547,8 +561,31 @@ body {
     width: 20px;
     border-radius: 5px;
   }
-  .checkbox_container_paragraph {
-    font-size: 13px;
+
+  .local_video_container {
+    height: 140px;
+    width: 140px;
+  }
+  .videos_placeholder img {
+    height: 130px;
+    width: 130px;
+  }
+
+  .finish_chat_button_container,
+  .call_buttons_container {
+    width: 65%;
+    height: auto;
+    margin: auto 40px;
+  }
+
+  .call_button_large {
+    width: 50px;
+    height: 50px;
+  }
+  .call_button_small {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
   }
 
   .messages_container {
@@ -568,6 +605,22 @@ body {
     top: 12px;
     margin-right: -18px;
     border-radius: 8px;
+  }
+
+  .dialog_image_container {
+    width: 150px;
+    height: 150px;
+  }
+  .dialog_image_container img {
+    width: 60%;
+    height: 60%;
+  }
+
+  .dialog_accept_call_button,
+  .dialog_reject_call_button {
+    width: 45%;
+    height: 80%;
+    margin: 20px auto;
   }
 }
 
@@ -596,14 +649,15 @@ body {
   }
 
   .logo_container img {
-    margin-top: 80px;
+    margin: 80px auto;
     height: 250px;
   }
   .description_container {
     text-align: center;
     margin: 0 270px;
   }
-  .description_container_paragraph {
+  .description_container_paragraph,
+  .dialog_description {
     font-size: 35px;
   }
 
@@ -616,7 +670,8 @@ body {
   .personal_code_title_paragraph,
   .personal_code_value_paragraph,
   .checkbox_container_paragraph,
-  .personal_code_input {
+  .personal_code_input,
+  .dialog_title {
     font-size: 40px;
   }
   .personal_code_connecting_paragraph,
@@ -645,16 +700,20 @@ body {
 
   .connecting_button {
     border-radius: 35px;
+    margin: auto 40px;
     padding: 10px;
   }
   .connecting_button img {
-    min-height: 65px;
+    min-height: 55px;
   }
 
   .checkbox_connection {
     width: 60px;
     height: 60px;
     margin: 0 20px 0 75px;
+  }
+  .checkbox_connection img {
+    width: 80%;
   }
 
   .videos_container {
@@ -672,6 +731,49 @@ body {
     height: 280px;
   }
 
+  .video_recording_buttons_container {
+    width: auto;
+    height: auto;
+    padding: 10px 20px;
+    border-radius: 25px;
+    right: 20px;
+    top: 25px;
+  }
+  .video_recording_buttons_container button {
+    margin: 10px 10px;
+    margin-bottom: 20px;
+    font-size: 35px;
+    height: 30px;
+  }
+  .video_recording_buttons_container button img {
+    width: 100%;
+    height: 150%;
+  }
+  #stop_recording_button {
+    height: 58px;
+  }
+
+  .finish_chat_button_container,
+  .call_buttons_container {
+    width: 60%;
+    height: auto;
+    margin: 50px -140px;
+  }
+
+  .call_button_large {
+    width: 120px;
+    height: 120px;
+  }
+  .call_button_small {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  .call_button_large img,
+  .call_button_small img {
+    width: 45%;
+  }
+
   .messages_container {
     font-size: 40px;
   }
@@ -687,17 +789,23 @@ body {
   .new_message_input {
     min-height: 120px;
     font-size: 40px;
-    padding: 40px;
+    padding: 40px 16px 40px 40px;
     border-radius: 25px;
   }
   .send_message_button {
     width: 90px;
     height: 90px;
-    margin: 5px;
+    margin: 2px;
     border-radius: 25px;
   }
   .send_message_button_image {
     width: 50%;
     height: 50%;
+  }
+
+  .dialog_content {
+    width: 50%;
+    height: 30%;
+    border-radius: 25px;
   }
 }
