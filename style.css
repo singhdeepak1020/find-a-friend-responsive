@@ -68,11 +68,11 @@ body {
 .logo_container {
   height: 12%;
   width: auto;
-  margin: 25px auto;
+  margin: 20px auto;
 }
 .logo_container img {
   height: 100%;
-  margin-top: 30%;
+  margin-top: 45%;
 }
 
 .description_container {
@@ -807,5 +807,15 @@ body {
     width: 50%;
     height: 30%;
     border-radius: 25px;
+  }
+  .dialog_image_container {
+    width: 250px;
+    height: 250px;
+  }
+  .dialog_accept_call_button,
+  .dialog_reject_call_button {
+    width: 45%;
+    height: 150%;
+    margin: 20px auto;
   }
 }
